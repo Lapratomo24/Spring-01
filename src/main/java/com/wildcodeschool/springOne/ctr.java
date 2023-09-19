@@ -14,10 +14,10 @@ public class ctr {
     public ResponseEntity<String> index() {
         return new ResponseEntity<>(
                 "<ul>" +
-                        "<li><a href='/doctor/1'>Shinra Kishitani</a></li>" +
-                        "<li><a href='/doctor/2'>Tony Tony Chopper</a></li>" +
-                        "<li><a href='/doctor/3'>Wendy Marvell</a></li>" +
-                        "<li><a href='/doctor/4'>Senku Ishigami</a></li>" +
+                        "<li><a href='/doctor/1'>William Hartnett</a></li>" +
+                        "<li><a href='/doctor/2'>Patrick Troughton</a></li>" +
+                        "<li><a href='/doctor/3'>John Pertwee</a></li>" +
+                        "<li><a href='/doctor/4'>Peter Davison</a></li>" +
                         "</ul>", HttpStatus.OK
         );
     }
@@ -25,28 +25,28 @@ public class ctr {
     @GetMapping("/doctor/1")
     public ResponseEntity<String> shinra() {
         return new ResponseEntity<>(
-                "Shinra Kishitani - Durarara", HttpStatus.OK
+                "First Doctor - William Hartnett", HttpStatus.OK
         );
     }
 
     @GetMapping("/doctor/2")
     public ResponseEntity<String> chopper() {
         return new ResponseEntity<>(
-                "Tony Tony Chopper - One Piece", HttpStatus.OK
+                "Second Doctor - Patrick Troughton", HttpStatus.OK
         );
     }
 
     @GetMapping("/doctor/3")
     public ResponseEntity<String> wendy() {
         return new ResponseEntity<>(
-                "Wendy Marvell - Fairy Tail", HttpStatus.OK
+                "Third Doctor - John Pertwee", HttpStatus.OK
         );
     }
 
     @GetMapping("/doctor/4")
     public ResponseEntity<String> senku() {
         return new ResponseEntity<>(
-                "Senku Ishigami - Dr. Stone", HttpStatus.OK
+                "Fourth Doctor - Peter Davison", HttpStatus.OK
         );
     }
 
